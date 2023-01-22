@@ -194,7 +194,7 @@ class DDECCT(nn.Module):
         factor = (torch.sqrt(self.betas_bar[t])*self.betas[t]/(self.betas_bar[t]+self.betas[t])) #theoretical step size
         alpha_final = 1
         if self.line_search:
-            #Perform Step Sizer Line-search
+            #Perform Step Sizer Line-search # TODO : perform it on GPU for speed
             alpha = torch.linspace(1,20,20).unsqueeze(0).unsqueeze(0)
             new_synd = (torch.matmul(sign_to_bin(torch.sign(yt.unsqueeze(-1) - alpha*(noise_add_pred*factor).unsqueeze(-1))).permute(0,2,1),self.pc_matrix.cpu()) % 2).round().long().sum(-1)
             alpha_final = alpha.squeeze(0)[:,new_synd.argmin(-1).unsqueeze(-1)].squeeze(0)
