@@ -1,5 +1,6 @@
 """
-Implementation of "Denoising Diffusion Error Correction Codes" (DDECC)
+Implementation of "Denoising Diffusion Error Correction Codes" (DDECC), in ICLR23
+https://arxiv.org/abs/2209.13533
 @author: Yoni Choukroun, choukroun.yoni@gmail.com
 """
 from __future__ import print_function
