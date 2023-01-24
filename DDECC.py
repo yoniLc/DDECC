@@ -1,5 +1,6 @@
 """
 Implementation of "Denoising Diffusion Error Correction Codes" (DDECC)
+https://arxiv.org/abs/2209.13533
 @author: Yoni Choukroun, choukroun.yoni@gmail.com
 """
 from torch.nn import LayerNorm
