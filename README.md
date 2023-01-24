@@ -1,6 +1,6 @@
 # Denoising Diffusion Error Correction Codes
 
-Implementation of ["Denoising Diffusion Error Correction Codes (ICLR 2023)"](https://arxiv.org/abs/2209.13533).
+Implementation of [Denoising Diffusion Error Correction Codes (ICLR 2023)](https://arxiv.org/abs/2209.13533).
 
 <p align="center">
 <img src="Codes_DB/illust_ddecc2.PNG" width="550px">
